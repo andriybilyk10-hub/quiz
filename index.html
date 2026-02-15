@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<head>
+    <meta charset="UTF-8">
+    <title>Квіз з Таймером</title>
+    <link rel="stylesheet" href="style.css">
+
+<div class="app-container">
+
+    <div id="start-screen" class="screen">
+        <h1>Вікторина</h1>
+        <p>Докажи що вмієш! (Якщо зможешь😎)</p>
+        <button id="start-btn">Почати</button>
+    </div>
+
+    <div id="quiz-screen" class="screen hide">
+        <div class="header">
+            <span id="score-display">Бали: 0</span>
+        </div>
+
+        
+        <div class="timer-container">
+            <div class="timer-text">Час: <span id="time-left">15</span></div>
+            <div class="timer-bar-bg">
+                <div id="timer-bar" class="timer-bar-fill"></div>
+            </div>
+        </div>
+
+        <h2 id="question-text"></h2>
+        <div id="answers-container"></div>
+    </div>
+
+    
+    <div id="result-screen" class="screen hide">
+        <h2>Квіз завершено, молодець 🎉</h2>
+        <p id="result-text"></p>
+        <button id="restart-btn">Почати знову</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
